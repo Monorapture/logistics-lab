@@ -22,7 +22,9 @@ Unlike my portfolio projects, the code here is experimental. The goal is continu
 * `experiments/`: Testing new libraries or "first principles" logic.
 
 ---
-*Note: This code is for educational purposes and rapid prototyping. For production-ready code examples, please see my ### 🚀 Featured Projects
+*Note: This code is for educational purposes and rapid prototyping. For production-ready code examples, please see my:
+
+### 🚀 Featured Projects
 
 | Project | Domain | Description | Stack |
 | :--- | :--- | :--- | :--- |
