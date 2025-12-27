@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------------------
+# DATA & LOCAL STORAGE
+# ---------------------------------------------------------------------------
+# Exclude actual database files (Security & Size)
+*.db
+*.sqlite
+*.sqlite3
+
+# Exclude generated reports (Artifacts)
+reports/*.xlsx
+reports/*.csv
+# Keep the folder structure, even if empty
+!reports/.gitkeep
+!data/.gitkeep
+
+# ---------------------------------------------------------------------------
+# PYTHON INTERNALS
+# ---------------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ---------------------------------------------------------------------------
+# VIRTUAL ENVIRONMENTS
+# ---------------------------------------------------------------------------
+# Exclude my local virtual environment folders.
+# I want to avoid committing thousands of dependency files to the remote repo.
+venv/
+.venv/
+env/
+ENV/
+
+# ---------------------------------------------------------------------------
+# ENVIRONMENT VARIABLES & SECURITY
+# ---------------------------------------------------------------------------
+# Security Critical: This file will store sensitive API keys and credentials.
+# I must keep this local to prevent leaking secrets to the public repository.
+.env
+
+# ---------------------------------------------------------------------------
+# IDE / EDITOR CONFIGS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
