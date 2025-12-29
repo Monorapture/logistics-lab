@@ -20,8 +20,6 @@ def init_db():
     """Reads the SQL schema and builds empty tables."""
     print(f"Initializing database: {DB_PATH.name}...")
 
-    # FIX 1: Indentation corrected!
-    # Logic is now INSIDE the function, so 'conn' is local, not global.
     sql_script = SCHEMA_PATH.read_text(encoding='utf-8')
 
     with sqlite3.connect(DB_PATH) as conn:
