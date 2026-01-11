@@ -12,8 +12,6 @@ def execute_sql_from_file(database_path, sql_file_path):
     query = sql_file_path.read_text(encoding='utf-8')
     
     with sqlite3.connect(database_path) as conn:
-        conn.execute("DROP VIEW IF EXISTS view_event_log")
-       
         conn.executescript(query)
         print("✅ View 'view_event_log' created successfully.")
         

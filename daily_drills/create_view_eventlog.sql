@@ -1,3 +1,5 @@
+DROP VIEW IF EXISTS view_event_log;
+
 CREATE VIEW view_event_log AS 
     Select
     p.sku  as '_CASE_KEY',
